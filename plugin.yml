@@ -1,0 +1,19 @@
+name: OreFinder
+main: OreFinder\OreFinder
+version: 1.0
+author: Falk
+api: [1.0.0]
+load: POSTWORLD
+commands:
+ ores:
+  permission: orefinder.find
+  description: Scan for ores
+  usage: /ores
+permissions:
+ orefinder:
+  default: op
+  description: Top OreFinder permission
+  children:
+   orefinder.find:
+    default: op
+    description: Allows finding of ores
